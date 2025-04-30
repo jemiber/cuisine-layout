@@ -1,0 +1,446 @@
+/*===========================================
+    CSS RESET - meyerweb.com
+===========================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,a,abbr,acronym,address,big,cite,
+code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
+strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,
+ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,
+details,embed,figure,figcaption,footer,header,hgroup,
+menu,nav,output,ruby,section,summary,time,mark,audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,
+figure,footer,header,hgroup,menu,
+nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*******************************
+UNIVERSAL BASE
+*******************************/
+:root{
+    --primary-light: #feffff;
+    --primary-dark: #e2e9ed;
+    --accent-light: #b7b7be;
+    --accent-dark: #f08d34;
+    --primary-text: #0c0d23;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    background-color: var(--primary-dark);
+}
+
+/*******************************
+BASE STYLE
+*******************************/
+/* header,
+main,
+.dishes,
+.bigsection{
+    background: var(--primary-dark);
+} */
+/* .history,
+.contact,
+.days,
+.bigpic,
+.testimonials,
+.john,
+.customer,
+.review,
+.last-section{
+    background: var(--primary-light);
+} */
+
+.container{
+    background-image: url("../images/background.jpg");
+    background-position: center;
+}
+
+h1,
+h2,
+h5{
+    font-family: 'Yeseva One', 'serif';
+    color: var(--primary-text);
+}
+h1{
+    font-size: 5rem;
+    line-height: 6rem;
+} 
+h2{
+    font-size: 4rem;
+}
+h5{
+    font-size: 2rem;
+}
+h6{
+    font-size: 2rem;
+}
+.orange{
+    color: var(--accent-dark);
+    font-family:'Arial', 'Helvetica', 'sans-serif';
+    font-size: 1.3rem;
+}
+.number{
+    font-family: 'Yeseva One','serif';
+    font-size: 2rem;
+}
+p{
+    color: var(--primary-text);
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 1.5rem;
+}
+.orangebtn{
+    background-color: var(--accent-dark);
+    color: var(--primary-light);
+    border: var(--accent-dark);
+    border-radius: 5px;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 1.3rem;
+    min-height: 3rem;
+}
+input{
+    background-color: var(--primary-light);
+    min-height: 3rem;
+    border: 1px solid var(--accent-light);
+    border-radius: 5px;
+}
+a, main span{
+    font-family: 'Arial','Helvetica','sans-serif';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary-text);
+}
+.name, .title{
+    font-family: 'Arial','Helvetica','sans-serif';
+}
+.name{
+    font-size: 2rem;
+    color: var(--primary-text);
+}
+.title{
+    font-size: 1.3rem;
+    color: var(--accent-light);
+}
+.italic{
+    font-style: italic;
+}
+i{
+    color:var(--accent-dark);
+}
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-shopping-cart,
+.fa-search{
+    font-size: 1.5rem;
+}
+.fa-shopping-cart,
+.fa-search{
+    color: var(--primary-text);
+}
+.contact i{
+    font-size: 3rem;
+}
+.customer i{
+    font-size: 1.5rem;
+}
+.gradient{
+    background: #FFFFFF;
+    background: radial-gradient(ellipse 65% 55%, rgba(255, 255, 255, 1) 0%, rgba(237, 221, 83, 0) 100%);
+}
+/*******************************
+LAYOUT
+*******************************/
+header{
+    width: 100%;
+    padding-top: 2rem;
+    text-align: end;
+}
+header li{
+    padding-right: 4rem;
+}
+header a{
+    padding-right: 2rem;
+}
+header i{
+    padding-right: 2rem;
+}
+main{
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    padding-left: 10rem;
+    width: 100%;
+}
+h1{
+    padding-bottom: 2rem;
+}
+input{
+    width: 25%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+}
+main button{
+    margin-left: 0;
+    width: 7%;
+    margin-bottom: 2rem;
+}
+main span{
+    padding-right: 4rem;
+}
+
+.history{
+    width: 100%;
+    padding: 6rem 20rem 10rem 60rem;
+    background-image: url("../images/bg2.jpg");
+}
+.gradient{
+    width: 80%;
+    margin-right: 10px;
+}
+.history span,
+.history h2,
+.dishes span,
+.dishes h2,
+.contact span,
+.contact h2,
+.testimonials span,
+.testimonials h2{
+    line-height: 4rem;
+}
+.history h2,
+.dishes h2{
+    padding-bottom: 2rem;
+}
+.history p{
+    padding-top: 1.5rem;
+    padding-bottom: 1.3rem;
+    line-height: 3rem;
+}
+.history button{
+    width: 20%;
+}
+.bigsection{
+    width: 100%;
+}
+.dishes{
+    width: 100%;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.dishes ul{
+    width: 30%;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--accent-light);
+    margin-left: auto;
+    margin-right: auto;
+}
+.dishes a{
+    padding-right: 3rem;
+}
+.selected{
+    color: var(--accent-dark);
+}
+
+.foods{
+    width: 100%;
+    padding-left: 15rem;
+}
+.foods img{
+    background-color: var(--primary-dark);
+    width: 20vw;
+    height: 30vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 6rem;
+}
+
+.contact{
+    width: 100%;
+    text-align: center;
+}
+.contact h2{
+    padding-bottom: 4rem;
+}
+.fa-phone{
+    padding: 1rem 1.3rem;
+    border: 1px solid var(--accent-dark);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.days{
+    width: 100%;
+    padding: 1.5rem 10rem 7rem;
+}
+.monday,
+.friday{
+    width: 50%;
+}
+.monday{
+    padding-left: 23rem;
+}
+.friday{
+    padding-left: 20rem;
+}
+.monday>p,
+.friday>p{
+    padding-bottom: 2rem;
+}
+.bigpic{
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 10rem;
+}
+.bigpic>img{
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.john{
+    width: 100%;
+}
+.john>img{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0cm;
+    border-radius: 50%;
+}
+.customer{
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.name,
+.title{
+    width: 100%;
+}
+.title{
+    padding-bottom: 2rem;
+}
+
+.review{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+.review>.italic{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.5rem;
+}
+
+/*******************************
+FLOATS
+*******************************/
+.foods img,
+.monday,
+.friday,
+.title{
+    float: left;
+}
+.contact,
+.days,
+.bigpic,
+.testimonials,
+.john,
+.customer,
+.review{
+    clear: both;
+}
+
+/*******************************
+MEDIA QUERIES
+*******************************/
+@media screen and (max-width: 768px){
+    .history{
+        width: 100%;
+        padding: 6rem 20rem 10rem 6rem;
+    }
+    .orangebtn{
+        width: 20%;
+    }
+    .history button{
+        width: 50%;
+    }
+    .dishes ul{
+        width: 100%;
+    }
+    .foods{
+        padding-left: 5rem;
+    }
+    .days{
+        width: 100%;
+        padding-left: 0%;
+    }
+    .monday,
+    .friday{
+        padding-left: 3rem;
+        text-align: center;
+    }
+    
+}
